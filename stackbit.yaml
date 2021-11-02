@@ -1,0 +1,189 @@
+stackbitVersion: ~0.3.0
+ssgName: hugo
+publishDir: public
+dataDir: data
+pagesDir: content
+assets:
+  referenceType: static
+  staticDir: static
+  uploadDir: assets
+  publicPath: /
+models:
+  assets:
+    type: data
+    label: Assets
+    file: assets.json
+    fields:
+      - type: object
+        name: algolia_search
+        label: Algolia Search
+        fields:
+          - type: string
+            name: js
+            label: Js
+      - type: object
+        name: comments
+        label: Comments
+        fields:
+          - type: string
+            name: js
+            label: Js
+      - type: object
+        name: details-polyfill
+        label: Details Polyfill
+        fields:
+          - type: string
+            name: js
+            label: Js
+      - type: object
+        name: fuse_search
+        label: Fuse Search
+        fields:
+          - type: string
+            name: js
+            label: Js
+      - type: object
+        name: lunr_search
+        label: Lunr Search
+        fields:
+          - type: string
+            name: js
+            label: Js
+      - type: object
+        name: main
+        label: Main
+        fields:
+          - type: string
+            name: css
+            label: Css
+          - type: string
+            name: js
+            label: Js
+      - type: object
+        name: rtl
+        label: Rtl
+        fields:
+          - type: string
+            name: css
+            label: Css
+          - type: string
+            name: js
+            label: Js
+      - type: object
+        name: sidebar
+        label: Sidebar
+        fields:
+          - type: string
+            name: js
+            label: Js
+      - type: object
+        name: twemoji
+        label: Twemoji
+        fields:
+          - type: string
+            name: js
+            label: Js
+  default:
+    type: data
+    label: Default
+    folder: config/default
+    fields:
+      - type: object
+        name: library
+        label: Library
+        fields:
+          - type: string
+            name: path
+            label: Path
+          - type: string
+            name: config
+            label: Config
+          - type: object
+            name: js
+            label: Js
+            fields:
+              - type: string
+                name: main
+                label: Main
+              - type: string
+                name: autoRender
+                label: Auto Render
+          - type: object
+            name: css
+            label: Css
+            fields:
+              - type: string
+                name: main
+                label: Main
+  widgets:
+    type: data
+    label: Widgets
+    file: config/default/widgets.toml
+    fields:
+      - type: object
+        name: about
+        label: About
+        fields:
+          - type: string
+            name: title
+            label: Title
+          - type: string
+            name: description
+            label: Description
+          - type: image
+            name: logo
+            label: Logo
+      - type: object
+        name: breadcrumbs
+        label: Breadcrumbs
+        fields:
+          - type: string
+            name: separator
+            label: Separator
+          - type: list
+            name: excludeParents
+            label: Exclude Parents
+            items:
+              type: string
+      - type: object
+        name: search
+        label: Search
+        fields:
+          - type: string
+            name: title
+            label: Title
+      - type: object
+        name: sidebar_menu
+        label: Sidebar Menu
+        fields:
+          - type: string
+            name: title
+            label: Title
+          - type: string
+            name: mirror
+            label: Mirror
+      - type: object
+        name: social_menu
+        label: Social Menu
+        fields:
+          - type: string
+            name: title
+            label: Title
+          - type: list
+            name: platforms
+            label: Platforms
+            items:
+              type: string
+      - type: object
+        name: taxonomy_cloud
+        label: Taxonomy Cloud
+        fields:
+          - type: string
+            name: title
+            label: Title
+          - type: string
+            name: taxonomy
+            label: Taxonomy
+          - type: boolean
+            name: shuffle
+            label: Shuffle

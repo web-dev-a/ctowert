@@ -1,0 +1,131 @@
+baseURL = ""
+title = "Minimo"
+copyright = ""
+theme = "minimo"
+disqusShortname = ""
+googleAnalytics = ""
+Paginate = 5
+preserveTaxonomyNames = true
+enableRobotsTXT = true
+pygmentsCodefences = true
+enableEmoji = true
+defaultContentLanguage = "en"
+themesDir = "themes"
+publishDir = "public"
+
+[params.info]
+description = "Minimalist theme for Hugo"
+title404 = "Nothing's here!"
+
+[params.assets]
+favicon = "favicon.ico"
+customCSS = [ "css/custom.css" ]
+customJS = [ "js/custom.js" ]
+gopher = ""
+
+[params.copyright]
+prefix = ""
+holder = "MunifTanjim"
+startYear = "2017"
+suffix = ""
+
+[params.settings]
+dateFormat = "2006, Jan 02"
+listDateFormat = "2006, Jan 02"
+archiveDateFormat = "Jan 02"
+hideEntryNavigation = [ "page" ]
+hideEntryMeta = [ "page" ]
+showReadingTime = true
+showLastmod = true
+taxonomyCloudShuffle = true
+accentColor = "#ffcd00"
+hideMainMenu = false
+
+[params.sidebar]
+enable = true
+
+[params.widgets]
+header = [ "breadcrumbs" ]
+homepage = [ "recent_posts" ]
+sidebar = [ "about", "search", "sidebar_menu", "taxonomy_cloud" ]
+footer = [ "social_menu" ]
+
+[params.opengraph.facebook]
+admins = [ ]
+appID = ""
+pageID = ""
+
+[params.opengraph.twitter]
+page = ""
+
+[params.seo]
+titleSeparator = "•"
+
+[params.social]
+codepen = "MunifTanjim"
+email = "contact@example.com"
+facebook = "MunifTanjim"
+github = "MunifTanjim"
+gitlab = "MunifTanjim"
+instagram = "MunifTanjim"
+linkedin = "muniftanjim"
+twitter = "MunifTanjim"
+telegram = "MunifTanjim"
+google_scholar = "qc6CJjYAAAAJ"
+youtube = "UCT-U0rNerYxItGcuoPX-WYA"
+
+[params.comments]
+enable = false
+
+  [params.comments.isso]
+  enable = false
+  scriptSrc = ""
+  dataAttrs = ""
+
+  [params.comments.staticman]
+  enable = true
+  apiEndpoint = "https://api.staticman.net/v2/entry"
+  maxDepth = 2
+  username = "MunifTanjim"
+  repository = "minimo"
+
+  [params.comments.utterances]
+  enable = false
+  issueTerm = "pathname"
+  label = ""
+  theme = "github-light"
+
+    [params.comments.utterances.github]
+    username = "MunifTanjim"
+    repository = "minimo"
+
+[params.search]
+client = "fuse"
+
+  [params.search.algolia]
+  appId = ""
+  indexName = ""
+  searchApiKey = ""
+
+[taxonomies]
+author = "authors"
+category = "categories"
+series = "series"
+tag = "tags"
+
+[permalinks]
+page = "/:slug/"
+
+[[menu.main]]
+name = "Repo"
+weight = -10
+identifier = "repository"
+url = "https://github.com/MunifTanjim/minimo"
+
+[blackfriday]
+hrefTargetBlank = true
+
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 1
